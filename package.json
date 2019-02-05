@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "webpack": "webpack",
+    "webpack:production": "webpack -p",
     "devServer": "webpack-dev-server"
   },
   "repository": {
