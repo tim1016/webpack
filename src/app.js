@@ -1,3 +1,7 @@
-import {obj} from "./script";
+import "./styles/styles.scss";
 
-console.log(obj.add(2,3));
+
+import {addition, minus} from "./script";
+
+console.log(addition(2,3)); 
+console.log(minus(2,3));

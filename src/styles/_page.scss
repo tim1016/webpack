@@ -1,0 +1,19 @@
+.page{
+    background-color: #000;
+    margin: 0;
+
+    &__paragraph{
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    &__image{
+        height: 50vh;
+
+        &--dog{
+            background: url("./../public/images/dog.jpg");
+            background-repeat: none;
+            background-size: contain; 
+        }
+    }
+}
