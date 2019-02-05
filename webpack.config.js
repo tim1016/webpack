@@ -1,13 +1,14 @@
 
 module.exports = {
-    // mode: "development",
-    entry: "./src/app.js",
+    mode: "development",
+    entry: ["@babel/polyfill", "./src/app.js"],
     output: {
-        path: __dirname + "/public"
+        path: __dirname + "/public",
+        filename: "App.js"
     },
     devServer: {
         contentBase: __dirname + "/public",
-        port: 3000
+        port: 8080
     },
     module: {
         rules : [
@@ -19,9 +20,9 @@ module.exports = {
                 test: /\.s?css$/,
                 use: [
                     "style-loader",
-                    "css-loader",
-                    "sass-loader"
-                ]
+                    "css-loader", 
+                    "postcss-loader", 
+                    "sass-loader"]
             },
             {
                 test: /\.(gif|png|jpe?g|svg)/i,

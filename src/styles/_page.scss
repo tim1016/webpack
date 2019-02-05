@@ -12,8 +12,8 @@
 
         &--dog{
             background: url("./../public/images/dog.jpg");
-            background-repeat: none;
-            background-size: contain; 
+            background-repeat: no-repeat;
+            background-size: contain;  
         }
     }
 }
